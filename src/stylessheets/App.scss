@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-font: 'Public Sans', sans-serif;
+  --secondary-font: 'Oswald', sans-serif;
+  --light-background: #fff;
+  --dark-background: #161C24;
+  --primary-color: #fff;
+  --secondary-color: #212b36;
+  --tertiary-color: #919EAB;
+}
+
+.App{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
