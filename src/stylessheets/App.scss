@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
 
 *, *::before, *::after{
   margin: 0;
@@ -19,8 +19,23 @@
 
 .App{
   display: flex;
-  justify-content: space-around;
+  flex-flow: column;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  font-family: var(--primary-font);
+}
+
+h3{
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--tertiary-color);
+}
+
+.light-theme{
+  background-color: var(--light-background);
+  color: var(--secondary-color);
+}
+
+.dark-theme{
+  background-color: var(--dark-background);
+  color: var(--primary-color);
 }

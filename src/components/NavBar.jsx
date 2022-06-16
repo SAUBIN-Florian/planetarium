@@ -3,6 +3,19 @@ import "../stylessheets/navbar.scss";
 
 export default function NavBar() {
   return (
-    <div>NavBar</div>
+    <div className="navbar dark-theme">
+      <div className="navbar-container">
+        <h1 className="navbar-logo">LOGO</h1>
+        <ul className="navbar-list">
+          <li className="navbar-item">Home</li>
+          <li className="navbar-item">Components</li>
+          <li className="navbar-item">Pages</li>
+          <li className="navbar-item">Documentation</li>
+          <li className="navbar-item">
+            <button>Purchase Now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   )
 }

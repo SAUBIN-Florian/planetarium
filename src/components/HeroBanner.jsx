@@ -3,6 +3,8 @@ import "../stylessheets/herobanner.scss";
 
 export default function HeroBanner() {
   return (
-    <div>HeroBanner</div>
+    <div className="herobanner">
+
+    </div>
   )
 }
