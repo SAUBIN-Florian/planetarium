@@ -3,6 +3,6 @@ import "../stylessheets/moon.scss";
 
 export default function Moon() {
   return (
-    <div>Moon</div>
+    <div className="moon"></div>
   )
 }

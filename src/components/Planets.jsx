@@ -3,6 +3,8 @@ import "../stylessheets/planets.scss";
 
 export default function Planets() {
   return (
-    <div className="planets">Planets</div>
+    <div className="planets">
+      
+    </div>
   )
 }
