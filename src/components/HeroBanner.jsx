@@ -23,7 +23,10 @@ export default function HeroBanner() {
         <canvas className="herobanner-canvas"></canvas>
         <div className="herobanner-content">
           <h1>Start a <br />new journey <br />with <span>Planetarium</span></h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p>
+            Want to see beyond the horizon ? Take a seat pilot,<br />
+            we are going on an incredible voyage !
+          </p>
         </div>
       </div>
     </div>

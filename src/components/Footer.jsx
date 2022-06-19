@@ -3,6 +3,8 @@ import "../stylessheets/footer.scss";
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className="footer">
+      
+    </div>
   )
 }
