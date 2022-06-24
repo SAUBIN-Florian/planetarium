@@ -2,7 +2,7 @@ const initCanvas = (canvasName, videoName) => {
   const canvas = document.querySelector(canvasName);
   const ctx = canvas.getContext("2d");
 
-  let posX = 1000;
+  let posX = 50;
 
   canvas.addEventListener("mousemove", e => {
     posX = e.offsetX;
