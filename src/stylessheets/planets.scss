@@ -1,6 +1,146 @@
 .planets{
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 100vh;
   background-color: var(--dark-background);
+  overflow: hidden;
   z-index: 999;
+}
+
+.planets-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 88px;
+  color: var(--primary-color);
+  .planets-disclaimer{
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    font-size: 0.600rem;
+  }
+}
+
+.planets-imgs{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 88px;
+  perspective: 900px;
+  img{
+    position: absolute;
+    height: auto;
+    transition: all 0.8s ease-in-out;
+  }
+}
+
+// Ratio Diameter in % from Jupiter(142 984km) === 400px
+
+// Mercury => 2.82% === 11.28px
+// Venus => 8.45% === 33.8px
+// Earth => 8.45% === 33.8px
+// Mars => 4.23% === 16.92px
+// Jupiter => 100% === 400px
+// Saturn => 84.51% === 338.04px
+// Uranus => 35.92% === 143.68px
+// Neptune => 34.51% === 138.04px
+
+// In the end all of these percent will not be used... (for UI-UX reasons...)
+// Because of Mercury end like a white pixel on your screen... :)
+
+#mercury{
+  bottom: 10%;
+  left: 0%;
+  width: 50px;
+  transform: rotateY(-6deg);
+  z-index: 8;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#venus{
+  top: 20%;
+  left: 0%;
+  width: 90px;
+  transform: rotateY(-6deg);
+  z-index: 7;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#earth{
+  top: 20%;
+  left: 0%;
+  width: 100px;
+  transform: rotateY(-6deg);
+  z-index: 6;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#mars{
+  top: 20%;
+  left: 0%;
+  width: 70px;
+  transform: rotateY(-6deg);
+  z-index: 5;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#jupiter{
+  top: 20%;
+  left: 0%;
+  width: 400px;
+  transform: rotateY(-6deg);
+  z-index: 4;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#saturn{
+  top: 20%;
+  left: 0%;
+  width: 338px;
+  transform: rotateY(-6deg);
+  z-index: 3;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#uranus{
+  top: 20%;
+  left: 0%;
+  width: 200px;
+  transform: rotateY(-6deg);
+  z-index: 2;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
+}
+
+#neptune{
+  top: 20%;
+  left: 0%;
+  width: 200px;
+  transform: rotateY(-6deg);
+  z-index: 1;
+  &:hover{
+      transform: scale(1.05);
+      z-index: 99;
+    }
 }

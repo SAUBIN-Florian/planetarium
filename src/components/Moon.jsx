@@ -15,34 +15,31 @@ import moon9 from '../assets/moon/moon_neil.jpg';
 
 export default function Moon() {
 
-  window.setInterval(() => {
-    initSlider( ".element1");
-  }, 2000)
-
-  window.setInterval(() => {
-    initSlider( ".element2");
-  }, 2300)
+  useEffect(() => {
+    initSlider( ".element1", 4000);
+    initSlider( ".element2", 5000);
+  }, [])
 
   return (
     <div className="moon">
       <div className="slider-container">
         <div className="slider element1">
-            <img className="moon-img" src={moon1} alt="Apollo 11 schema" />
-            <img className="moon-img" src={moon2} alt="Buzz Aldrin" />
-            <img className="moon-img" src={moon3} alt="Cosmonaut" />
-            <img className="moon-img" src={moon4} alt="Cosmonaut" />
+            <img className="moon-img" src={moon1} data-view="show" alt="Apollo 11 schema" />
+            <img className="moon-img" src={moon2} data-view="hidden" alt="Buzz Aldrin" />
+            <img className="moon-img" src={moon3} data-view="hidden" alt="Cosmonaut" />
+            <img className="moon-img" src={moon4} data-view="hidden" alt="Cosmonaut" />
         </div>
         <div className="slider element2">
-            <img className="moon-img" src={moon5} alt="Moon's first step" />
-            <img className="moon-img" src={moon6} alt="July 1969 flyer" />
-            <img className="moon-img" src={moon7} alt="Foot step" />
-            <img className="moon-img" src={moon8} alt="Michael Collins" />
-            <img className="moon-img" src={moon9} alt="Neil Armstrong" />
+            <img className="moon-img" src={moon5} data-view="show" alt="Moon's first step" />
+            <img className="moon-img" src={moon6} data-view="hidden" alt="July 1969 flyer" />
+            <img className="moon-img" src={moon7} data-view="hidden" alt="Foot step" />
+            <img className="moon-img" src={moon8} data-view="hidden" alt="Michael Collins" />
+            <img className="moon-img" src={moon9} data-view="hidden" alt="Neil Armstrong" />
         </div>
       </div>
       <div className="moon-content">
         <h3>THE MOON</h3>
-        <h1>Revive July 1969</h1>
+        <h1>Relive July 1969</h1>
         <p>Apollo 11 as you've never seen it before...</p>
       </div>
     </div>

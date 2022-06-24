@@ -1,11 +1,17 @@
-const initSlider = (element) => {
+const initSlider = (element, time) => {
   const slider = document.querySelector(element);
   const slides = Array.from(slider.children);
-  // const slidesHeight = slides[0].getBoundingClientRect().height;
 
-  slides.forEach((slide) => {
-    slide.style.transform = `translateY(-100%)`
-  })
+  let counter = 0;
+
+  setInterval(() => {  
+    if(slides.length === counter){
+      counter = 0;
+      slides.forEach(img => img.dataset.view = "hidden");
+    };
+    slides[counter].dataset.view = "show";
+    counter++;
+  }, time);
 }
 
 export { initSlider };
