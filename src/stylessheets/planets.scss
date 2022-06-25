@@ -24,6 +24,11 @@
     font-size: 2.75rem;
     margin-bottom: 40px;
   }
+  p{
+    max-width: 70%;
+    line-height: 2.3;
+    animation: textOpacity 0.7s ease-in;
+  }
   .planets-disclaimer{
     position: absolute;
     left: 0;
@@ -46,7 +51,7 @@
   overflow: hidden;
 }
 
-img{
+.planets-wrapper > img{
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -82,34 +87,43 @@ img{
   }
 }
 
-// #radio1:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio1:checked ~ img{
+  margin-top: 0;
+}
 
-// #radio2:checked ~ #mercury{
-//   margin-top: -500px;
-// }
+#radio2:checked ~ img{
+  transform: translateY(-500px);
+}
 
-// #radio3:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio3:checked ~ img{
+  margin-top: -1000px;
+}
 
-// #radio4:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio4:checked ~ img{
+  margin-top: -1500px;
+}
 
-// #radio5:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio5:checked ~ img{
+  margin-top: -2000px;
+}
 
-// #radio6:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio6:checked ~ .planets-wrapper{
+  margin-top: -2500px;
+}
 
-// #radio7:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio7:checked ~ .planets-wrapper{
+  margin-top: -3000px;
+}
 
-// #radio8:checked ~ #mercury{
-//   margin-top: 0;
-// }
+#radio8:checked ~ .planets-wrapper{
+  margin-top: -3500px;
+}
+
+@keyframes textOpacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

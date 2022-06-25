@@ -17,6 +17,12 @@
   margin: 0 auto;
 }
 
+.navbar-logo{
+  font-family: var(--secondary-font);
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
 .navbar-list{
   display: flex;
   justify-content: space-around;
