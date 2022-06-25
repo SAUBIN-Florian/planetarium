@@ -32,14 +32,38 @@ export default function Planets() {
         <p className="planets-disclaimer">*Scales and distances are not representative</p>
       </div>
       <div className="planets-imgs">
-        <img src={Mercure} id="mercury" data-index="1" alt="Mercury" />
-        <img src={Venus} id="venus" data-index="2" alt="Venus" />
-        <img src={Terre} id="earth" data-index="3" alt="Earth" />
-        <img src={Mars} id="mars" data-index="4" alt="Mars" />
-        <img src={Jupiter} id="jupiter" data-index="5" alt="Jupiter" />
-        <img src={Saturne} id="saturn" data-index="6" alt="Saturn" />
-        <img src={Uranus} id="uranus" data-index="7" alt="Uranus" />
-        <img src={Neptune} id="neptune" data-index="8" alt="Neptune" />
+        <div className="planets-wrapper">
+          <img src={Mercure} id="mercury" data-index="1" alt="Mercury" />
+          <img src={Venus} id="venus" data-index="2" alt="Venus" />
+          <img src={Terre} id="earth" data-index="3" alt="Earth" />
+          <img src={Mars} id="mars" data-index="4" alt="Mars" />
+          <img src={Jupiter} id="jupiter" data-index="5" alt="Jupiter" />
+          <img src={Saturne} id="saturn" data-index="6" alt="Saturn" />
+          <img src={Uranus} id="uranus" data-index="7" alt="Uranus" />
+          <img src={Neptune} id="neptune" data-index="8" alt="Neptune" />
+        </div>
+      </div>
+      <div className="hidden-radio-inputs">
+        {/* hidden */}
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <input type="radio" name="radio-btn" id="radio5" />
+        <input type="radio" name="radio-btn" id="radio6" />
+        <input type="radio" name="radio-btn" id="radio7" />
+        <input type="radio" name="radio-btn" id="radio8" />
+        {/* hidden */}
+      </div>
+      <div className="planets-controls">
+        <label htmlFor="radio1" className="clickable-controls"></label>
+        <label htmlFor="radio2" className="clickable-controls"></label>
+        <label htmlFor="radio3" className="clickable-controls"></label>
+        <label htmlFor="radio4" className="clickable-controls"></label>
+        <label htmlFor="radio5" className="clickable-controls"></label>
+        <label htmlFor="radio6" className="clickable-controls"></label>
+        <label htmlFor="radio7" className="clickable-controls"></label>
+        <label htmlFor="radio8" className="clickable-controls"></label>
       </div>
     </div>
   )

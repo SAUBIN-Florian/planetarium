@@ -1,22 +1,23 @@
 .planets{
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
   width: 100%;
   height: 120vh;
   background-color: var(--dark-background);
+  padding: 0 88px;
   overflow: hidden;
   z-index: 999;
 }
 
 .planets-content{
   position: relative;
-  flex: 3;
-  width: 100%;
-  height: 100%;
-  padding-left: 88px;
-  padding-top: 15%;
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: left;
+  padding-bottom: 88px;
   line-height: 1.8;
   color: var(--primary-color);
   h1{
@@ -25,132 +26,90 @@
   }
   .planets-disclaimer{
     position: absolute;
-    left: 40px;
+    left: 0;
     bottom: 20px;
     font-size: 0.600rem;
   }
 }
 
 .planets-imgs{
-  flex: 9;
-  padding-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 6;
+}
+
+.planets-wrapper{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+img{
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  img{
-    width: 500px;
-    height: auto;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover{
+    transform: scale(1.02);
   }
 }
 
-// Ratio Diameter in % from Jupiter(142 984km) === 400px
+.hidden-radio-inputs{
+  display: none;
+}
 
-// Mercury => 2.82% === 11.28px
-// Venus => 8.45% === 33.8px
-// Earth => 8.45% === 33.8px
-// Mars => 4.23% === 16.92px
-// Jupiter => 100% === 400px
-// Saturn => 84.51% === 338.04px
-// Uranus => 35.92% === 143.68px
-// Neptune => 34.51% === 138.04px
+.planets-controls{
+  position: absolute;
+  top: calc(50% - 150px);
+  right: 88px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  width: auto;
+  height: 300px;
+}
 
-// In the end all of these percent will not be used... (for UI-UX reasons...)
-// Because of Mercury end like a white pixel on your screen... :)
+.clickable-controls{
+  border: 1px solid var(--tertiary-color);
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  &:hover{
+    background-color: var(--action-color);
+  }
+}
 
-// #mercury{
-//   bottom: 10%;
-//   left: 0%;
-//   width: 50px;
-//   transform: rotateY(-6deg);
-//   z-index: 8;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio1:checked ~ #mercury{
+//   margin-top: 0;
 // }
 
-// #venus{
-//   top: 20%;
-//   left: 0%;
-//   width: 90px;
-//   transform: rotateY(-6deg);
-//   z-index: 7;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio2:checked ~ #mercury{
+//   margin-top: -500px;
 // }
 
-// #earth{
-//   top: 20%;
-//   left: 0%;
-//   width: 100px;
-//   transform: rotateY(-6deg);
-//   z-index: 6;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio3:checked ~ #mercury{
+//   margin-top: 0;
 // }
 
-// #mars{
-//   top: 20%;
-//   left: 0%;
-//   width: 70px;
-//   transform: rotateY(-6deg);
-//   z-index: 5;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio4:checked ~ #mercury{
+//   margin-top: 0;
 // }
 
-// #jupiter{
-//   top: 20%;
-//   left: 0%;
-//   width: 400px;
-//   transform: rotateY(-6deg);
-//   z-index: 4;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio5:checked ~ #mercury{
+//   margin-top: 0;
 // }
 
-// #saturn{
-//   top: 20%;
-//   left: 0%;
-//   width: 338px;
-//   transform: rotateY(-6deg);
-//   z-index: 3;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio6:checked ~ #mercury{
+//   margin-top: 0;
 // }
 
-// #uranus{
-//   top: 20%;
-//   left: 0%;
-//   width: 200px;
-//   transform: rotateY(-6deg);
-//   z-index: 2;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio7:checked ~ #mercury{
+//   margin-top: 0;
 // }
 
-// #neptune{
-//   top: 20%;
-//   left: 0%;
-//   width: 200px;
-//   transform: rotateY(-6deg);
-//   z-index: 1;
-//   &:hover{
-//       transform: scale(1.05);
-//       z-index: 99;
-//     }
+// #radio8:checked ~ #mercury{
+//   margin-top: 0;
 // }
