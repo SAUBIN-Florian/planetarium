@@ -36,7 +36,6 @@ export default function Planets() {
         <h3>FAR BEYOND</h3>
         <h1>Explore Now...</h1>
         <p>{DB[data]}</p>
-        <p className="planets-disclaimer">*Scales and distances are not representative</p>
       </div>
       <div className="planets-imgs">
         <div className="planets-wrapper">

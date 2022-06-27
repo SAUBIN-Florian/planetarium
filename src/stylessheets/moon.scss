@@ -43,16 +43,16 @@
 
 .element1{
   position: absolute;
-  bottom: 10%;
-  left: 18%;
+  bottom: 80px;
+  left: 100px;
   transform: rotateY(34deg);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
 
 .element2{
   position: absolute;
-  top: 20%;
-  right: 18%;
+  top: 80px;
+  right: 200px;
   transform: rotateY(-25deg);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
