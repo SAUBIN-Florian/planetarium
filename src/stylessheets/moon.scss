@@ -5,11 +5,11 @@
   justify-content: space-around;
   align-items: center;
   background-color: var(--light-background);
+  padding: 0 176px;
   z-index: 999;
 }
 
 .slider-container{
-  flex: 7;
   position: relative;
   width: 600px;
   height: 800px;
@@ -44,7 +44,7 @@
 .element1{
   position: absolute;
   bottom: 140px;
-  left: 150px;
+  left: 0px;
   transform: rotateY(34deg);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
@@ -52,13 +52,12 @@
 .element2{
   position: absolute;
   top: 200px;
-  right: 150px;
+  right: 30px;
   transform: rotateY(-25deg);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
 
 .moon-content{
-  flex: 4;
   color: var(--secondary-color);
   line-height: 3rem;
   h1{
