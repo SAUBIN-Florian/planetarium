@@ -12,7 +12,7 @@ import Uranus from '../assets/planets/7_Uranus.png';
 import Neptune from '../assets/planets/8_Neptune.png';
 
 const DB = {
-    "0": "...",
+    "0": "",
     "1": "Mercury, the smallest planet in our solar system and closest to the Sun is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days.",
     "2": "Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.",
     "3": "Earth, our home planet is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.",

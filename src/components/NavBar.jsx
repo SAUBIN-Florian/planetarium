@@ -1,9 +1,22 @@
-import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import "../stylessheets/navbar.scss";
 
 export default function NavBar() {
+
+  const navbarRef = useRef(null);
+  const [iseVisible, setIsVisible] = useState(false);
+
+  const callback = () => {
+    console.log("I'm here !")
+  };
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(callback);
+    if(navbarRef.current)  observer.observe(navbarRef.current);
+  }, [navbarRef])
+
   return (
-    <div className="navbar dark-theme">
+    <div className="navbar dark-theme" ref={navbarRef}>
       <div className="navbar-container">
         <h1 className="navbar-logo">PLANETARIUM</h1>
         <ul className="navbar-list">
