@@ -44,7 +44,7 @@ export default function Explore() {
     <div className="explore">
       <h3 className="quote-title">FAMOUS QUOTES</h3>
       <div className="quote-wrapper">
-        <p className="quote-para"><span className="quote-mark">🙶</span>{quotes[randomIndex].quote}<span className="quote-mark">🙷</span></p>
+        <p className="quote-para"><span className="quote-mark">🙶</span>{quotes[randomIndex].quote}</p>
         <p className="quote-author">{quotes[randomIndex].author}</p>
       </div>
     </div>
