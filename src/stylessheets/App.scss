@@ -10,9 +10,9 @@
 :root{
   --primary-font: 'Public Sans', sans-serif;
   --secondary-font: 'Oswald', sans-serif;
-  --light-background: #fff;
+  --light-background: #FFF;
   --dark-background: #161C24;
-  --primary-color: #fff;
+  --primary-color: #FFF;
   --secondary-color: #212b36;
   --tertiary-color: #919EAB;
   --action-color: #2065D1;
@@ -41,4 +41,6 @@ h3{
 .dark-theme{
   background-color: var(--dark-background);
   color: var(--primary-color);
+  background: transparent;
+  backdrop-filter: blur(4px);
 }

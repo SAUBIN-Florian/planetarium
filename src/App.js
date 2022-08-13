@@ -5,6 +5,7 @@ import Explore from "./components/Explore";
 import Planets from "./components/Planets";
 import Moon from "./components/Moon";
 import Footer from "./components/Footer";
+import Toast from "./components/Toast";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Planets />
       <Moon />
       <Footer />
+      <Toast />
     </div>
   );
 }
