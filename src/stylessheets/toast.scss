@@ -6,15 +6,14 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   background: var(--primary-color);
   padding: 8px 16px;
-  line-height: 1.6rem;
-  border-radius: 6px;
-  box-shadow: 1px 0px 5px var(--tertiary-color);
+  border-radius: 8px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  animation: animateIn 1.2s ease-in;
+  animation: animateIn 1.5s ease-in;
 }
 
 .exit-animate{
@@ -29,9 +28,8 @@
 }
 
 .toast-para{
-  color: var(--primary-color);
-  font-weight: 700;
-  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.6rem;
 }
 
 .toast-sub-btn{

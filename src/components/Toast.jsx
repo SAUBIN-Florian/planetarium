@@ -33,7 +33,7 @@ export default function Toast() {
         <div className={`toast ${animate && 'exit-animate'}`}>
           <span className="toast-close" onClick={removeToast}>&#128939;</span>
           <h3 className="toast-title">SUBSCRIBE NOW !</h3>
-          <p>Get the newletter
+          <p className="toast-para">Get the newletter
             and participate to our space program...
           </p>
           {!isSub && <button className="toast-sub-btn" onClick={timedRemoveToast}>Subscribe</button>}
