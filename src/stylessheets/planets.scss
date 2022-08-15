@@ -142,11 +142,20 @@
   opacity: 1;
 }
 
+// ANIMATIONS:
 @keyframes textOpacity {
   0%{
     opacity: 0;
   }
   100%{
     opacity: 1;
+  }
+}
+
+// MEDIA QUERIES:
+@media screen and (min-width: 1600px) {
+  .planets-wrapper{
+    width: 700px;
+    height: 700px;
   }
 }
