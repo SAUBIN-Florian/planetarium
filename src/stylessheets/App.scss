@@ -44,3 +44,67 @@ h3{
   background: transparent;
   backdrop-filter: blur(4px);
 }
+
+// ANIMATED COMPONENTS
+.animateTitle { animation: animTitle 0.7s ease-in;}
+.animateTitleSpan {animation: animTitleSpan 1.5s ease-in;}
+.animateH3 {animation: animH3 1s ease-in;}
+.animatePara {animation: animPara 1.1s ease-in;}
+.animateAuthor {animation: animAuthor 1s ease-in;}
+
+// ANIMATIONS
+@keyframes animTitle {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animTitleSpan {
+  0%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes animH3 {
+  0%{
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animPara {
+  0%{
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animAuthor {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

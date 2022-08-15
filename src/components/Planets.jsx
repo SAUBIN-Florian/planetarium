@@ -1,4 +1,6 @@
+import React from "react";
 import { useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import "../stylessheets/planets.scss";
 
 // IMPORTS PLANETS
@@ -26,6 +28,7 @@ const DB = {
 export default function Planets() {
 
   let [data, setData] = useState("0");
+  const { ref: elementRef, inView: elementIsVisible } = useInView({threshold: 0.1, triggerOnce: true});
 
   const handleData = (e) => {
     setData(e.target.dataset.index);
@@ -33,9 +36,9 @@ export default function Planets() {
 
   return (
     <div className="planets">
-      <div className="planets-content">
-        <h3>FAR BEYOND</h3>
-        <h1>Explore Now...</h1>
+      <div className="planets-content" ref={elementRef}>
+        <h3 className={elementIsVisible ? "animateH3" : ""}>FAR BEYOND</h3>
+        <h1 className={elementIsVisible ? "animateTitle" : ""}>Explore Now...</h1>
         <p>{DB[data]}</p>
       </div>
       <div className="planets-imgs">

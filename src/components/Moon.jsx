@@ -1,5 +1,7 @@
+import React from "react";
 import { useEffect } from 'react';
 import { initSlider } from '../services/slider';
+import { useInView } from 'react-intersection-observer';
 import "../stylessheets/moon.scss";
 // IMGS Imports:
 import moon1 from '../assets/moon/moon_apollo_schema.jpg';
@@ -14,6 +16,8 @@ import moon9 from '../assets/moon/moon_neil.jpg';
 
 
 export default function Moon() {
+
+  const { ref: elementRef, inView: elementIsVisible } = useInView({threshold: 0, triggerOnce: true});
 
   useEffect(() => {
     initSlider( ".element1", 4000);
@@ -37,10 +41,10 @@ export default function Moon() {
             <img className="moon-img" src={moon9} data-view="hidden" alt="Neil Armstrong" />
         </div>
       </div>
-      <div className="moon-content">
-        <h3>THE MOON</h3>
-        <h1>Relive July 1969</h1>
-        <p>Apollo 11 as you've never seen it before...</p>
+      <div className="moon-content" ref={elementRef}>
+        <h3 className={elementIsVisible ? "animateH3" : ""}>THE MOON</h3>
+        <h1 className={elementIsVisible ? "animateTitle" : ""}>Relive July 1969</h1>
+        <p className={elementIsVisible ? "animatePara" : ""}>Apollo 11 as you've never seen it before...</p>
       </div>
     </div>
   )

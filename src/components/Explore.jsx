@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { useInView } from 'react-intersection-observer';
 import "../stylessheets/explore.scss";
 
 const quotes = [
@@ -38,14 +39,15 @@ const quotes = [
 
 export default function Explore() {
 
+  const { ref: elementRef, inView: elementIsVisible } = useInView({threshold: 0.1, triggerOnce: true});
   let randomIndex = Math.floor(Math.random() * quotes.length);
 
   return (
-    <div className="explore">
-      <h3 className="quote-title">FAMOUS QUOTES</h3>
+    <div className="explore" ref={elementRef}>
+      <h3 className={`quote-title ${elementIsVisible ? "animateH3" : ""}`}>FAMOUS QUOTES</h3>
       <div className="quote-wrapper">
-        <p className="quote-para"><span className="quote-mark">🙶</span>{quotes[randomIndex].quote}</p>
-        <p className="quote-author">{quotes[randomIndex].author}</p>
+        <p className={`quote-para ${elementIsVisible ? "animatePara" : ""}`}><span className="quote-mark">🙶</span>{quotes[randomIndex].quote}</p>
+        <p className={`quote-author ${elementIsVisible ? "animateAuthor" : ""}`}>{quotes[randomIndex].author}</p>
       </div>
     </div>
   )
