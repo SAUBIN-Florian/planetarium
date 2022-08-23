@@ -1,10 +1,27 @@
 import { useRef, useState, useEffect } from "react";
 import "../stylessheets/navbar.scss";
 
+const MobileMenu = () => {
+  return (
+    <div className="navbar-mobile-menu light-theme">
+        <a href="#home">Home</a>
+        <a href="#community">Community</a>
+        <a href="#Shop">Shop</a>
+        <a href="#Documentation">Documentation</a>
+        <button className="navbar-mobile-btn">Explore Now</button>
+    </div>
+  )
+}
+
 export default function NavBar() {
 
   const navRef = useRef(null);
   const [offset, setOffset] = useState(0);
+  const [isShown, setIsShown] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsShown(!isShown);
+  }
 
   useEffect(() => {
       const onScroll = () => setOffset(window.pageYOffset);
@@ -28,6 +45,9 @@ export default function NavBar() {
             <button className="navbar-btn">Explore Now</button>
           </li>
         </ul>
+        <button className="show-mobile-menu-btn" onClick={toggleMobileMenu}>&#8801;</button>
+        {isShown && <MobileMenu />}
+        {isShown && <button className="close-mobile-menu-btn" onClick={toggleMobileMenu}>&times;</button>}
       </div>
     </div>
   )

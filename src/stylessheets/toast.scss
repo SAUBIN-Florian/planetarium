@@ -84,3 +84,12 @@
     transform: translateY(-50px);
   }
 }
+
+// Media Queries:
+
+@media (max-width: 481px) {
+  .toast {
+    bottom: 3%;
+    right: calc(50% - 110px);
+  }
+}
