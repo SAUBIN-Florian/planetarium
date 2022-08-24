@@ -47,3 +47,19 @@
   text-align: end;
   color: var(--hover-action-color);
 }
+
+// Media Queries:
+
+@media (max-width: 481px) {
+  .quote-title{
+    top: 20%;
+  }
+
+  .quote-mark{
+    font-size: 4rem;
+  }
+
+  .quote-para{
+    font-size: 1rem;
+  }
+}

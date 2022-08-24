@@ -32,10 +32,10 @@
 }
 
 .planets-imgs{
+  flex: 6;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 6;
 }
 
 .planets-wrapper{
@@ -157,5 +157,53 @@
   .planets-wrapper{
     width: 700px;
     height: 700px;
+  }
+}
+
+@media (max-width: 481px) {
+  .planets {
+    height: 100vh;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .planets-wrapper{
+    width: 400px;
+    height: 400px;
+  }
+
+  .planets-content {
+    text-align: center;
+    margin: 20px 0;
+    h1{
+      font-size: 2rem;
+      margin-bottom: 80px;
+    }
+    p{
+      max-width: 90%;
+      height: 150px;
+      line-height: 2;
+      margin: 50px auto 0;
+    }
+  }
+
+  .planets-controls {
+    width: 300px;
+    top: 0;
+    left: calc(50% - 150px);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .clickable-controls{
+    padding: 6px;
+    &::after{
+      content: attr(data-name);
+      position: absolute;
+      top: 60%;
+      left: 40px;
+      font-size: 1rem;
+      transform: translateY(0px);
+    }
   }
 }

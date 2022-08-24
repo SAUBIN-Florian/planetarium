@@ -67,3 +67,22 @@
     font-size: 1rem;
   }
 }
+
+// Media Queries:
+
+@media (max-width: 481px) {
+  .moon {
+    width: 100%;
+    flex-flow: column-reverse;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .slider-container {
+    width: 90vw;
+    .slider {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
