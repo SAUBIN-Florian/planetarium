@@ -45,9 +45,9 @@ export default function NavBar() {
             <button className="navbar-btn">Explore Now</button>
           </li>
         </ul>
-        <button className="show-mobile-menu-btn" onClick={toggleMobileMenu}>&#8801;</button>
+        <button className="show-mobile-menu-btn unicode" onClick={toggleMobileMenu}>&#8801;</button>
         {isShown && <MobileMenu />}
-        {isShown && <button className="close-mobile-menu-btn" onClick={toggleMobileMenu}>&times;</button>}
+        {isShown && <button className="close-mobile-menu-btn unicode" onClick={toggleMobileMenu}>&times;</button>}
       </div>
     </div>
   )

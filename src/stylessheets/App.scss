@@ -46,6 +46,10 @@ h3{
   backdrop-filter: blur(4px);
 }
 
+.unicode {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 // ANIMATED COMPONENTS
 .animateTitle { animation: animTitle 0.7s ease-in;}
 .animateTitleSpan {animation: animTitleSpan 1.5s ease-in;}

@@ -32,13 +32,13 @@ export default function Toast() {
     <>
       {isTime && (
         <div className={`toast ${animate && 'exit-animate'}`}>
-          <span className="toast-close" onClick={removeToast}>&#128939;</span>
+          <span className="toast-close unicode" onClick={removeToast}>&#128939;</span>
           <h3 className="toast-title">SUBSCRIBE NOW !</h3>
           <p className="toast-para">Get the newletter
             and participate to our space program...
           </p>
           {!isSub && <button className="toast-sub-btn" onClick={timedRemoveToast}>Subscribe</button>}
-          {isSub && <button className="toast-sub-btn done">&#10004;</button>}
+          {isSub && <button className="toast-sub-btn done unicode">&#10004;</button>}
         </div>
       )}
     </>
