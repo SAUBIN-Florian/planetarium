@@ -83,7 +83,6 @@
   .slider-container {
     width: 90vw;
     height: 400px;
-    transform-style: flat;
     .slider {
       width: 200px;
       height: 200px;
@@ -91,6 +90,7 @@
   }
 
   .element2 {
+    transform-style: flat;
     top: 150px;
   }
 
