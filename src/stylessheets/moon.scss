@@ -46,9 +46,7 @@
   position: absolute;
   bottom: 140px;
   left: 0px;
-  -webkit-transform: rotateY(34deg);
   transform: rotateY(34deg);
-  -webkit-box-shadow: 1px 1px 10px var(--dark-background);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
 
@@ -56,9 +54,7 @@
   position: absolute;
   top: 200px;
   right: 30px;
-  -webkit-transform: rotateY(-25deg);
   transform: rotateY(-25deg);
-  -webkit-box-shadow: 1px 1px 10px var(--dark-background);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
 
@@ -95,6 +91,7 @@
 
   .element2 {
     top: 150px;
+    z-index: 1;
   }
 
   .moon-content {
