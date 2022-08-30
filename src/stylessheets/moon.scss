@@ -83,6 +83,7 @@
   .slider-container {
     width: 90vw;
     height: 400px;
+    transform-style: flat;
     .slider {
       width: 200px;
       height: 200px;
@@ -91,7 +92,6 @@
 
   .element2 {
     top: 150px;
-    z-index: 1;
   }
 
   .moon-content {

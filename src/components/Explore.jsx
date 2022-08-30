@@ -46,8 +46,13 @@ export default function Explore() {
     <div className="explore" ref={elementRef}>
       <h3 className={`quote-title ${elementIsVisible ? "animateH3" : ""}`}>FAMOUS QUOTES</h3>
       <div className="quote-wrapper">
-        <p className={`quote-para ${elementIsVisible ? "animatePara" : ""}`}><span className="quote-mark unicode">&#x1f676;</span>{quotes[randomIndex].quote}</p>
-        <p className={`quote-author ${elementIsVisible ? "animateAuthor" : ""}`}>{quotes[randomIndex].author}</p>
+        <p className={`quote-para ${elementIsVisible ? "animatePara" : ""}`}>
+          <span className="quote-mark material-symbols-outlined">format_quote</span>
+          {quotes[randomIndex].quote}
+        </p>
+        <p className={`quote-author ${elementIsVisible ? "animateAuthor" : ""}`}>
+          {quotes[randomIndex].author}
+        </p>
       </div>
     </div>
   )
