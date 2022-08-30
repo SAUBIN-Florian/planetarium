@@ -47,7 +47,8 @@
   text-shadow: 1px 1px 1px var(--secondary-color);
 }
 
-@media (max-width: 481px) {
+// MEDIA QUERIES:
+@media screen and (max-width: 481px) {
   .herobanner {
     background-color: var(--dark-background);
     .herobanner-canvas {

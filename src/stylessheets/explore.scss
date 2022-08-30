@@ -48,9 +48,8 @@
   color: var(--hover-action-color);
 }
 
-// Media Queries:
-
-@media (max-width: 481px) {
+// MEDIA QUERIES:
+@media screen and (max-width: 481px) {
   .quote-title{
     top: 12%;
   }

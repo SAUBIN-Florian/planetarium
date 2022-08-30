@@ -160,7 +160,7 @@
   }
 }
 
-@media (max-width: 481px) {
+@media screen and (max-width: 481px) {
   .planets {
     flex-direction: column;
     padding: 0;
@@ -176,7 +176,6 @@
     margin: 20px 0;
     h1{
       font-size: 2rem;
-      margin-bottom: 80px;
     }
     p{
       max-width: 90%;

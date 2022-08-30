@@ -59,9 +59,8 @@
   }
 }
 
-// Media Queries:
-
-@media (max-width: 481px) {
+// MEDIA QUERIES:
+@media screen and (max-width: 481px) {
   .footer {
     height: 100vh;
   }

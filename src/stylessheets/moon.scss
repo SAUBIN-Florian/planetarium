@@ -46,7 +46,9 @@
   position: absolute;
   bottom: 140px;
   left: 0px;
+  -webkit-transform: rotateY(34deg);
   transform: rotateY(34deg);
+  -webkit-box-shadow: 1px 1px 10px var(--dark-background);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
 
@@ -54,7 +56,9 @@
   position: absolute;
   top: 200px;
   right: 30px;
+  -webkit-transform: rotateY(-25deg);
   transform: rotateY(-25deg);
+  -webkit-box-shadow: 1px 1px 10px var(--dark-background);
   box-shadow: 1px 1px 10px var(--dark-background);
 }
 
@@ -63,15 +67,15 @@
   line-height: 3rem;
   h1{
     font-size: 2.75rem;
+    margin-bottom: 40px;
   }
   p{
     font-size: 1rem;
   }
 }
 
-// Media Queries:
-
-@media (max-width: 481px) {
+// MEDIA QUERIES:
+@media screen and (max-width: 481px) {
   .moon {
     width: 100%;
     justify-content: center;
