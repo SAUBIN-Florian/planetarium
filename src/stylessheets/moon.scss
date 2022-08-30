@@ -89,8 +89,12 @@
     }
   }
 
+  .element1 {
+    transform-style: preserve-3d;
+  }
+
   .element2 {
-    transform-style: flat;
+    transform-style: preserve-3d;
     top: 150px;
   }
 

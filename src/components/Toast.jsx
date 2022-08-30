@@ -38,7 +38,7 @@ export default function Toast() {
             and participate to our space program...
           </p>
           {!isSub && <button className="toast-sub-btn" onClick={timedRemoveToast}>Subscribe</button>}
-          {isSub && <button className="toast-sub-btn done">&#10004;</button>}
+          {isSub && <button className="toast-sub-btn done unicode">&#10004;</button>}
         </div>
       )}
     </>
