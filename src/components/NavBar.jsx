@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { NavModal } from "./NavModal";
 import "../stylessheets/navbar.scss";
 
 const MobileMenu = () => {
@@ -18,9 +19,14 @@ export default function NavBar() {
   const navRef = useRef(null);
   const [offset, setOffset] = useState(0);
   const [isShown, setIsShown] = useState(false);
+  const [isShowModal, setIsShowModal] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsShown(!isShown);
+  }
+
+  const toggleModal = () => {
+    setIsShowModal(!isShowModal);
   }
 
   useEffect(() => {
@@ -38,7 +44,9 @@ export default function NavBar() {
         <h1 className="navbar-logo">PLANETARIUM</h1>
         <ul className="navbar-list">
           <li className="navbar-item navbar-active">Home</li>
-          <li className="navbar-item">Community</li>
+          <li className="navbar-item" onClick={toggleModal}>
+            Community {isShowModal ? "<" : ">"}
+          </li>
           <li className="navbar-item">Shop</li>
           <li className="navbar-item">Documentation</li>
           <li className="navbar-item">
@@ -49,6 +57,7 @@ export default function NavBar() {
         {isShown && <MobileMenu />}
         {isShown && <button className="close-mobile-menu-btn unicode" onClick={toggleMobileMenu}>&times;</button>}
       </div>
+      {isShowModal && <NavModal />}
     </div>
   )
 }
