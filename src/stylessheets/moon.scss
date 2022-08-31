@@ -71,6 +71,21 @@
 }
 
 // MEDIA QUERIES:
+@media screen and (min-width: 1000px) and (max-width: 1600px){
+  .slider-container {
+    .slider {
+      transform-style: preserve-3d;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .element2 {
+    top: 250px;
+    right: 100px;
+  }
+}
+
 @media screen and (max-width: 481px) {
   .moon {
     width: 100%;
@@ -84,17 +99,13 @@
     width: 90vw;
     height: 400px;
     .slider {
+      transform-style: flat;
       width: 200px;
       height: 200px;
     }
   }
 
-  .element1 {
-    transform-style: preserve-3d;
-  }
-
   .element2 {
-    transform-style: preserve-3d;
     top: 150px;
   }
 
