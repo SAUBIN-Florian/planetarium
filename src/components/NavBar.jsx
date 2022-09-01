@@ -45,7 +45,11 @@ export default function NavBar() {
         <ul className="navbar-list">
           <li className="navbar-item navbar-active">Home</li>
           <li className="navbar-item" onClick={toggleModal}>
-            Community {isShowModal ? "<" : ">"}
+            Community {isShowModal 
+            ? 
+              <span className="community-arrows unicode"> &#708;</span> 
+            : 
+              <span className="community-arrows unicode"> &#709;</span>}
           </li>
           <li className="navbar-item">Shop</li>
           <li className="navbar-item">Documentation</li>
@@ -57,7 +61,7 @@ export default function NavBar() {
         {isShown && <MobileMenu />}
         {isShown && <button className="close-mobile-menu-btn unicode" onClick={toggleMobileMenu}>&times;</button>}
       </div>
-      {isShowModal && <NavModal />}
+      {isShowModal && <NavModal onClick={toggleModal}/>}
     </div>
   )
 }

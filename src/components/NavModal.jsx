@@ -1,6 +1,7 @@
 import "../stylessheets/navmodal.scss";
 
-export function NavModal() {
+export function NavModal({state}) {
+
   return (
     <div className="nav-modal light-theme">
       <div className="nav-modal-wrapper">
