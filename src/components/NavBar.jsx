@@ -45,11 +45,7 @@ export default function NavBar() {
         <ul className="navbar-list">
           <li className="navbar-item navbar-active">Home</li>
           <li className="navbar-item" onClick={toggleModal}>
-            Community {isShowModal 
-            ? 
-              <span className="community-arrows unicode"> &#708;</span> 
-            : 
-              <span className="community-arrows unicode"> &#709;</span>}
+            Community {isShowModal ? <span className="com-arrow">&#708;</span> : <span className="com-arrow">&#709;</span>}
           </li>
           <li className="navbar-item">Shop</li>
           <li className="navbar-item">Documentation</li>

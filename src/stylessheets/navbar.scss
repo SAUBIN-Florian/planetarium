@@ -120,13 +120,11 @@
   background-color: var(--action-color);
   color: var(--primary-color);
 }
-
-.community-arrows {
-  font-weight: bold;
+.com-arrow {
+  padding-left: 2px;
 }
 
 // Media Queries:
-
 @media screen and (min-width: 481px) {
   .show-mobile-menu-btn {
     display: none;
